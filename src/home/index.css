@@ -1,0 +1,176 @@
+/* Basic Reset and Layout */
+.app-container {
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.main-save-btn {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Modal Styles */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-end;
+    /* Align to the right side of the screen */
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    width: 400px;
+    /* Width similar to the image */
+    height: 100%;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #008080;
+    /* Teal-like color from image */
+    color: white;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.segment-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.schema-info {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+/* Blue Box Styling */
+.selected-schemas-box {
+    border: 1px solid #00BFFF;
+    /* Light blue border */
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #f7fcff;
+}
+
+.schema-row,
+.schema-row-add {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.schema-select {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.remove-btn {
+    background: none;
+    border: 1px solid #ccc;
+    color: #888;
+    cursor: pointer;
+    font-size: 1.2em;
+    line-height: 1;
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.remove-btn-placeholder {
+    width: 28px;
+    height: 28px;
+    color: transparent;
+    display: block;
+    line-height: 1;
+}
+
+.add-schema-link {
+    background: none;
+    border: none;
+    color: #00BFFF;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 0;
+    font-size: 0.9em;
+}
+
+.add-schema-link:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 15px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.save-btn {
+    padding: 10px 15px;
+    background-color: #008080;
+    /* Teal */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.save-btn:disabled {
+    background-color: #b3d9d9;
+    cursor: not-allowed;
+}
+
+.cancel-btn {
+    padding: 10px 15px;
+    background-color: white;
+    color: #c90000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
